@@ -1,45 +1,36 @@
 import { Inject, Injectable } from '@graphql-modules/di';
-import { ChatDbObject, MessageDbObject } from "@models";
-import { CHATS, MESSAGES } from "@modules/common";
+import { Message } from './message.type';
+import { MESSAGES } from './messages.symbol';
 
 @Injectable()
 export class MessagesProvider {
 
   constructor(
-    @Inject(MESSAGES) private messages: MessageDbObject[],
-    @Inject(CHATS) private chats: ChatDbObject[],
+    @Inject(MESSAGES) private messages: Message[],
   ) {}
 
-  getMessages(chatId: number): MessageDbObject[] {
+  getMessages(chatId: number): Message[] {
     return this.messages.filter(message => message.chatId === chatId);
   }
 
-  getMessage(id: number): MessageDbObject {
+  getMessage(id: number): Message {
     return this.messages.find(message => message.id === id);
   }
 
-  createMessage(content: string, chatId: number): MessageDbObject {
+  createMessage(content: string, chatId: number): Message {
     const id = this.messages[this.messages.length-1].id + 1;
 
-    const newMessage: MessageDbObject = {id, chatId, content};
+    const newMessage: Message = {id, chatId, content};
 
-    this.messages = [...this.messages, newMessage];
-
-    this.chats = this.chats.map(chat => chat.id !== chatId ? chat : {
-      ...chat,
-      messageIds: [...this.messages.filter(message => message.chatId === chat.id).map(message => message.id), newMessage.id],
-    });
+    this.messages.push(newMessage);
 
     return newMessage;
   }
 
   deleteMessage(id: number): number {
-    const chatId = this.messages.find(message => message.id === id).chatId;
-    this.messages.filter(message => message.id !== id);
-    this.chats = this.chats.map(chat => chat.id !== chatId ? chat : {
-      ...chat,
-      messages: this.messages.filter(message => message.chatId === chat.id).map(message => message.id),
-    });
+    
+    const message = this.messages.find(message => message.id === id);
+    this.messages.splice(this.messages.indexOf(message), 1);
 
     return id;
   }

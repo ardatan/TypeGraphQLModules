@@ -1,5 +1,5 @@
 import { ChatsProvider } from "./chats.provider";
-import { Resolver, Mutation, Arg, Int, Query } from "type-graphql";
+import { Resolver, Mutation, Arg, Int, Query } from 'type-graphql';
 import { Chat } from "./chat.type";
 
 @Resolver(of => Chat)
@@ -18,7 +18,7 @@ export class ChatResolver {
 
   @Mutation(returns => Chat)
   createChat(@Arg('title') title: string, @Arg('description') description: string) {
-    return this.chatsProvider.createChat({ title, description });
+    return this.chatsProvider.createChat({ id: Math.random(), title, description });
   }
 
   @Mutation(returns => Int)
