@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "@types/graphql": "14.0.4",
-    "nodemon": "1.18.9"
+    "nodemon": "1.18.10"
   }
 }
