@@ -1,8 +1,6 @@
 import 'reflect-metadata';
 import { AppModule } from './modules/app';
 import { ApolloServer } from 'apollo-server';
-import { useContainer } from 'type-graphql';
-import { ModuleContext } from '@graphql-modules/core';
 
 const chats = [
   {
@@ -39,8 +37,6 @@ const messages = [
     content: "Yes, I do!",
   },
 ];
-
-useContainer<ModuleContext>(({ context }) => context.injector);
 
 const { schema, context } = AppModule.forRoot({
   chats,

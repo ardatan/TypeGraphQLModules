@@ -20,12 +20,13 @@ export const MessagesModule = new GraphQLModule({
     ChatResolver,
     MessageResolver
   ],
-  extraSchemas: [
+  extraSchemas: () => [
     buildSchemaSync({
       resolvers: [
         ChatResolver,
         MessageResolver
-      ]
+      ],
+      container: ({ context }) => context.injector
     })
-  ]
+  ] 
 });

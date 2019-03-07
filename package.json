@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "GraphQL Modules TypeGraphQL integration",
   "main": "index.js",
-  "repository": "https://github.com/darkbasic/graphql-modules-seed.git",
-  "author": "Niccolò Belli <niccolo.belli@linuxsystems.it>",
+  "repository": "https://github.com/ardatan/TypeGraphQLModules.git",
+  "author": "Arda TANRIKULU <ardatanrikulu@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/index.ts",
@@ -12,18 +12,18 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@graphql-modules/core": "0.4.0",
-    "@graphql-modules/di": "0.4.0",
-    "apollo-server": "2.3.1",
-    "graphql": "14.0.2",
-    "reflect-metadata": "0.1.12",
-    "ts-node": "7.0.1",
-    "tsconfig-paths": "3.7.0",
-    "type-graphql": "^0.16.0",
-    "typescript": "3.2.2"
+    "@graphql-modules/core": "0.4.2",
+    "@graphql-modules/di": "0.4.2",
+    "apollo-server": "2.4.8",
+    "graphql": "14.1.1",
+    "reflect-metadata": "0.1.13",
+    "ts-node": "8.0.3",
+    "tsconfig-paths": "3.8.0",
+    "type-graphql": "0.17.0",
+    "typescript": "3.3.3333"
   },
   "devDependencies": {
-    "@types/graphql": "14.0.4",
-    "nodemon": "1.18.9"
+    "@types/graphql": "14.0.7",
+    "nodemon": "1.18.10"
   }
 }
