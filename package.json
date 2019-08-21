@@ -14,7 +14,7 @@
   "dependencies": {
     "@graphql-modules/core": "0.7.9",
     "@graphql-modules/di": "0.7.9",
-    "apollo-server": "2.8.1",
+    "apollo-server": "2.8.2",
     "graphql": "14.4.2",
     "reflect-metadata": "0.1.13",
     "ts-node": "8.3.0",
