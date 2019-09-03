@@ -14,20 +14,20 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.24.tgz#3ce939cb127fb8aaa3ffc1e90dff9b8af9f2e3dc"
   integrity sha512-8GqG48m1XqyXh4mIZrtB5xOhUwSsh1WsrrsaZQOEYYql3YN9DEu9OOSg0ILzXHZo/h2Q74777YE4YzlArQzQEQ==
 
-"@graphql-modules/core@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.yarnpkg.com/@graphql-modules/core/-/core-0.7.10.tgz#892ded63656acbc3b2601032cf607f7b87a99688"
-  integrity sha512-zf/ssHb/o/+TansoGgHVZXWNVAUDdb1/tBaMf4Kr70h6oD/DcYd244SAnEurCh1QfTc2Gu7e007ocbWAUY8LVg==
+"@graphql-modules/core@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@graphql-modules/core/-/core-0.7.11.tgz#5eab67d25045967c33bf40de5c0eb972370ce0df"
+  integrity sha512-9xTX3M/vYNYYBagAhS883Ng8G4kF0/lOGg6tBfnSXAgA7EqDZkJuHb8fYwUTLQMKiNEeZK8KOFhiaIkTgOIHNw==
   dependencies:
-    "@graphql-modules/di" "0.7.10"
+    "@graphql-modules/di" "0.7.11"
     apollo-server-caching "0.5.0"
-    graphql-toolkit "0.5.10"
+    graphql-toolkit "0.5.12"
     tslib "1.10.0"
 
-"@graphql-modules/di@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.yarnpkg.com/@graphql-modules/di/-/di-0.7.10.tgz#909b1140a05ff72d50ea1e99c5221648d91509de"
-  integrity sha512-eXRQyGtGPIMk0t//6BKZi3dtLtdIxbKNqvdcVKh58aWyTbvI9aDZcFWU1rp0Mk/J/Vs+qgJMMCiIuKFgBQ9YJw==
+"@graphql-modules/di@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@graphql-modules/di/-/di-0.7.11.tgz#10927f948e789ce1cc89e2e2b615ed3b91777a9f"
+  integrity sha512-SkE6OK/ZSJYb0eIg0bP1iOKTldjAUSXZu4dcoiK3wTPWiQ1FXtg+IOnb6mDUTD6RosbeYMZPbQFCfSwEcM6KLA==
   dependencies:
     events "3.0.0"
     tslib "1.10.0"
@@ -1472,10 +1472,10 @@ graphql-tag@^2.9.2:
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.0.tgz#87da024be863e357551b2b8700e496ee2d4353ae"
   integrity sha512-9FD6cw976TLLf9WYIUPCaaTpniawIjHWZSwIRZSjrfufJamcXbVVYfN2TWvJYbw0Xf2JjYbl1/f2+wDnBVw3/w==
 
-graphql-toolkit@0.5.10:
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/graphql-toolkit/-/graphql-toolkit-0.5.10.tgz#7b4d5e84c421ca72801d436084478d4a7ac06444"
-  integrity sha512-mMHNezD9oT0IlM/vkZd/aeoIKtXqKnZq3ipJIMcHZPmMDPcZEf7BMzbB8naKWSWPaB1Iskg426DrfzQDUgU25A==
+graphql-toolkit@0.5.12:
+  version "0.5.12"
+  resolved "https://registry.yarnpkg.com/graphql-toolkit/-/graphql-toolkit-0.5.12.tgz#2ab4a81ff2e67bd591be5c660f09744024d98617"
+  integrity sha512-sYiY6lBBd09uRPSIzEbbBuMLxzFhMBRg688cbaCbqhjEEzKN5mKZr+Chd5jFYPrDv5yKAzeHnujqvIzjs7bO+A==
   dependencies:
     "@kamilkisiela/graphql-tools" "4.0.6"
     "@types/glob" "7.1.1"
